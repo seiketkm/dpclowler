@@ -21,6 +21,6 @@ with open("qa_items.csv","w", newline="", encoding="UTF-8") as file:
     # 出力
     # dialogplayの制約で発話例が4つは必要
     writer.writerow([index, question, answer])
-    writer.writerow([index, question])
-    writer.writerow([index, question])
-    writer.writerow([index, question])
+    writer.writerow([index, f"{question}について、よろしくお願いします。"])
+    writer.writerow([index, f"{question}を教えてください"])
+    writer.writerow([index, f"{question}がわかりません"])
